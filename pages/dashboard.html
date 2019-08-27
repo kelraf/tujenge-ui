@@ -7,21 +7,100 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/custom/nav.css">
+    <link rel="stylesheet" href="../css/custom/dashboard-body.css">
 </head>
 
 <body>
-    <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+    <!-- Nav Container -->
+    <div class="container-fluid nav-cont">
+
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <div class="top-plate">
+
+                </div>
+            </div>
         </div>
-    </nav>
-    <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+        <div class="row nav-row">
+            <div class="col-md-6 p-0">
+                <nav>
+                    <div class="nav nav-tabs text-white" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                        <a class="nav-item nav-link" id="nav-products-tab" data-toggle="tab" href="#nav-products" role="tab" aria-controls="nav-products" aria-selected="false">Products</a>
+                        <a class="nav-item nav-link" id="nav-services-tab" data-toggle="tab" href="#nav-services" role="tab" aria-controls="nav-services" aria-selected="false">Services</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-6 p-0">
+                <div class="icons-cont">
+                    <a href="#" class="icon-item-link">r</a>
+                    <a href="#" class="icon-item-link">t</a>
+                    <a href="#" class="icon-item-link">i</a>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    <!-- End of Nav Container -->
+    
+    <!-- Dashboard Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="tab-content" id="nav-tabContent">
+
+                    <!-- Home Section -->
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="container-fluid">
+                            <div class="row pt-5 pb-5">
+                                <div class="col-md-6 col-sm-6 col-4">Image</div>
+                                <div class="col-md-6 col-sm-6 col-8"">
+                                    
+                                    <!-- Product/company name -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h4>Company Name</h4>
+                                        </div>
+                                    </div>
+
+                                    <!-- Description -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p class="lead">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                                laboriosam officia incidunt. Voluptates asperiores 
+                                                et aliquam dolorum, reprehenderit accusamus.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Button for more -->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <button class="btn">More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Home Section -->
+
+                    <!-- Products Section -->
+                    <div class="tab-pane fade" id="nav-products" role="tabpanel" aria-labelledby="nav-products-tab"> Products </div>
+                    <!-- End of Products Section -->
+
+                    <!-- Service Section -->
+                    <div class="tab-pane fade" id="nav-services" role="tabpanel" aria-labelledby="nav-services-tab"> Services </div>
+                    <!-- End of Service Section -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Dashboard Content -->
 
     <script src="../js/jquery-3.4.1.js"></script>
     <script src="../js/jquery-3.4.1.slim.js"></script>
