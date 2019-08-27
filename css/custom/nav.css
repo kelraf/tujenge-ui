@@ -17,6 +17,11 @@
     width: 100%;
 }
 
+/* .nav-tabs {
+    display: flex;
+    flex-direction: row;
+} */
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -33,7 +38,7 @@
 }
 
 .icons-cont {
-    background: rgb(121, 108, 108);
+    /* background: rgb(121, 108, 108); */
     height: 40px;
     width: 50%;
     float: right;
@@ -45,4 +50,25 @@
     flex: 1;
     text-align: center;
     color: white;
+}
+
+.icon-item-link:hover {
+    text-decoration: none;
+}
+
+.icon-cont {
+    /* background: hotpink; */
+    height: 100%;
+    /* width: 50%; */
+
+}
+
+.icon-cont img {
+    width: 35%;
+}
+
+.number {
+    position: relative;
+    top: -8px;
+    left: -7px;
 }
