@@ -1,21 +1,69 @@
-// Tabs 
-let home_button = document.getElementById("home-tab");
-let products_button = document.getElementById("products-tab");
-let services_button = document.getElementById("services-tab");
+$(document).ready(function() {
+    // Tabs 
+    let home_button = $("#home-tab");
+    let products_button = $("#products-tab");
+    let services_button = $("#services-tab");
 
-// Active Tab and content Container
-let active_tab = $(".active-tab");
-let active_content_item = document.getElementsByClassName("active-content-item");
+    // Active Tab and content Container
+    let active_tab = $(".active-tab");
+    let active_content_item = $(".active-content-item");
 
-// Content Containers
-let home_cont = document.getElementById("home-content");
-let products_cont = document.getElementById("products-content");
-let services_cont = document.getElementById("services-content");
+    // Nav Items Container
+    let nav_items = $("#nav-items");
+    // let nav_items = $("#nav-items");
 
-// Function To navigate The Tabs and content Display
-home_button.onclick = function() {
-    console.log(active_tab);
-}
+    // Content Containers
+    let home_cont = $("#home-content");
+    let products_cont = $("#products-content");
+    let services_cont = $("#services-content");
+
+    // Function To navigate The Tabs and content Display
+    home_button.click(function() {
+
+        if (nav_items.find(".active-tab").removeClass("active-tab")) {
+
+            $(this).addClass("active-tab");
+
+            if ($("#content-container").find(".active-content-item").removeClass("active-content-item")) {
+                home_cont.addClass("active-content-item");
+            } else {
+                alert("Error");
+            }
+
+        }
+        
+
+    });
+
+    products_button.click(function() {
+
+        if (nav_items.find(".active-tab").removeClass("active-tab")) {
+
+            $(this).addClass("active-tab");
+
+            if ($("#content-container").find(".active-content-item").removeClass("active-content-item")) {
+                products_cont.css(display, "block");
+                // products_cont.addClass("active-content-item");
+            } else {
+                alert("Error");
+            }
+        }
+        
+        
+
+    });
+
+    services_button.click(function() {
+
+        if (nav_items.find(".active-tab").removeClass("active-tab")) {
+            $(this).addClass("active-tab")
+        }
+        
+
+    });
+
+});
+
 
 
 
