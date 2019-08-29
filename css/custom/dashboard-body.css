@@ -1,3 +1,17 @@
 .lead-mine {
     font-size: 15px;
 }
+
+.content-container {
+    position: relative;
+    top: 50px;
+}
+
+.content-item {
+    position: absolute;
+    display: none;
+}
+
+.active-content-item {
+    display: block;
+}
