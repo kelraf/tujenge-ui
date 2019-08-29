@@ -13,47 +13,50 @@
 
 <body>
     <!-- Nav Container -->
-    <div class="container-fluid nav-cont">
 
+    <!-- Profile DropDown -->
+    <div class="profile-down" id="profile-dropdown">
         <div class="row">
-            <div class="col-md-12 p-0">
-                <div class="top-plate">
-
-                </div>
-            </div>
+            <div class="col-4">Icon</div>
+            <div class="col-8">Word</div>
         </div>
+        <div class="row">
+            <div class="col-4">Icon</div>
+            <div class="col-8">Word</div>
+        </div>
+    </div>
+
+    <div class="container-fluid nav-cont">
         <div class="row nav-row">
             <div class="col-6 p-0">
-                <nav>
-                    <div class="nav nav-tabs text-white" id="nav-tab" role="tablist">
-                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-                        <a class="nav-item nav-link" id="nav-products-tab" data-toggle="tab" href="#nav-products" role="tab" aria-controls="nav-products" aria-selected="false">Products</a>
-                        <a class="nav-item nav-link" id="nav-services-tab" data-toggle="tab" href="#nav-services" role="tab" aria-controls="nav-services" aria-selected="false">Services</a>
-                    </div>
-                </nav>
+                <div class="nav-items text-white" id="">
+                    <button class="nav-items-custom active-tab" id="home-tab">Home</button>
+                    <button class="nav-items-custom" id="products-tab">Products</button>
+                    <button class="nav-items-custom" id="services-tab">Services</button>
+                </div>
             </div>
             <div class="col-6 p-0">
                 <div class="icons-cont">
-                    <a href="#" class="icon-item-link">
+                    <a href="#" class="icon-item-link" title="My Cart -> Click To Show">
                         <!-- Cart Icon -->
                         <div class="icon-cont">
                             <img src="../images/icons/cart.png" class="img-fluid" alt="Notification Icon">
                             <span class="number">2</span>
                         </div>
                     </a>
-                    <a href="#" class="icon-item-link">
+                    <a href="#" class="icon-item-link" title="My Notifications -> Click To Show">
                         <!-- Notification Icon -->
                         <div class="icon-cont">
                             <img src="../images/icons/notification.png" class="img-fluid" alt="Notification Icon">
                             <span class="number">2</span>
                         </div>
                     </a>
-                    <a href="#" class="icon-item-link">
+                    <div class="icon-item-link" id="profile" title="My Profile -> Click For More">
                         <!-- Profile Icon -->
-                        <div class="icon-cont">
+                        <div class="icon-cont" style="cursor: pointer; color: black;">
                             <img src="../images/icons/profile.png" class="img-fluid" alt="Notification Icon">
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,21 +65,19 @@
     <!-- End of Nav Container -->
 
     <!-- Dashboard Content -->
-    <div class="container-fluid">
+    <div class="container-fluid content-container">
         <div class="row">
             <div class="col-md-9">
-                <div class="tab-content" id="nav-tabContent">
-
-                    <!-- Home Section -->
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <div class="container-fluid">
-                            <div class="row pt-3 pb-3">
-                                <div class="col-md-6 col-sm-6 col-4">
-                                    <div class="image-cont">
-                                        <img src="../images/logos/rama_homes.jpg" class="img-fluid" alt="">
-                                    </div>
+                <!-- Home Section -->
+                <div class="content-item active-content-item" id="home-content">
+                    <div class="container-fluid">
+                        <div class="row pt-3 pb-3">
+                            <div class="col-md-6 col-sm-6 col-4">
+                                <div class="image-cont">
+                                    <img src="../images/logos/rama_homes.jpg" class="img-fluid" alt="">
                                 </div>
-                                <div class="col-md-6 col-sm-6 col-8" ">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-8" ">
                                     
                                     <!-- Product/company name -->
                                     <div class="row ">
@@ -114,39 +115,39 @@
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-8 "">
 
-                                    <!-- Product/company name -->
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h4 class="lead">Wheelbarrow</h4>
-                                        </div>
+                                <!-- Product/company name -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4 class="lead">Wheelbarrow</h4>
                                     </div>
+                                </div>
 
-                                    <!-- Description -->
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <p class="lead-mine">
-                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. laboriosam officia incidunt. Voluptates asperiores et aliquam dolorum, reprehenderit accusamus.
-                                            </p>
-                                        </div>
+                                <!-- Description -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="lead-mine">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. laboriosam officia incidunt. Voluptates asperiores et aliquam dolorum, reprehenderit accusamus.
+                                        </p>
                                     </div>
+                                </div>
 
-                                    <!-- Button for more -->
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <button class="btn">More</button>
-                                        </div>
+                                <!-- Button for more -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <button class="btn">Add To Cart</button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <!-- Third Item -->
-                            <div class="row pt-3 pb-3">
-                                <div class="col-md-6 col-sm-6 col-4">
-                                    <div class="image-cont">
-                                        <img src="../images/logos/powersaw.jpg" class="img-fluid" alt="">
-                                    </div>
+                        <!-- Third Item -->
+                        <div class="row pt-3 pb-3">
+                            <div class="col-md-6 col-sm-6 col-4">
+                                <div class="image-cont">
+                                    <img src="../images/logos/powersaw.jpg" class="img-fluid" alt="">
                                 </div>
-                                <div class="col-md-6 col-sm-6 col-8" ">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-8" ">
                                     
                                     <!-- Product/company name -->
                                     <div class="row ">
@@ -169,7 +170,7 @@
                                     <!-- Button for more -->
                                     <div class="row ">
                                         <div class="col-12 ">
-                                            <button class="btn ">More</button>
+                                            <button class="btn ">Add To Cart</button>
                                         </div>
                                     </div>
                                 </div>
@@ -179,14 +180,12 @@
                     <!-- End of Home Section -->
 
                     <!-- Products Section -->
-                    <div class="tab-pane fade " id="nav-products " role="tabpanel " aria-labelledby="nav-products-tab "> Products </div>
+                    <div class="content-item " id="products-content "> Products </div>
                     <!-- End of Products Section -->
 
                     <!-- Service Section -->
-                    <div class="tab-pane fade " id="nav-services " role="tabpanel " aria-labelledby="nav-services-tab "> Services </div>
+                    <div class="content-item " id="services-content "> Services </div>
                     <!-- End of Service Section -->
-
-                </div>
             </div>
         </div>
     </div>
@@ -196,6 +195,7 @@
     <script src="../js/jquery-3.4.1.js "></script>
     <script src="../js/jquery-3.4.1.slim.js "></script>
     <script src="../js/bootstrap.js "></script>
+    <script src="../js/custom/nav_body.js "></script>
 </body>
 
 </html
